@@ -30,3 +30,6 @@ This project is a RESTful API for a basic online quiz application built with Nod
 ## Run Server
 
 npm run dev
+
+## Clustering
+To improve performance under high traffic conditions, this application uses clustering. The cluster.js file manages the creation of worker processes, allowing the application to utilize multiple CPU cores. This setup helps distribute incoming requests and enhances responsiveness.
