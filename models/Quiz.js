@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Question = require("./Question"); // Import the Question model
+const Question = require("./Question");
 
 const quizSchema = new mongoose.Schema({
   title: {
@@ -13,7 +13,7 @@ const quizSchema = new mongoose.Schema({
   questions: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Question", // Reference to Question model
+      ref: "Question",
     },
   ],
   createdAt: {

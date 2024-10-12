@@ -19,6 +19,14 @@ This project is a RESTful API for a basic online quiz application built with Nod
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/quiz-app-backend.git
-   cd quiz-app-backend
+   git clone https://github.com/Divyanshu7611/vcriate.git
+   cd vcriate
    ```
+2. **install Node Packages:**
+   npm install
+3. **Setup Environment Variable:**
+   create .env file
+
+## Run Server
+
+npm run dev
