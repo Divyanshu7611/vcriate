@@ -3,6 +3,7 @@ require("dotenv").config();
 const User = require("../models/User");
 
 exports.auth = async (req, res, next) => {
+  console.log("Auth middleware executed");
   try {
     // extract token
     const token =
