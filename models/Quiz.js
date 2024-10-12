@@ -1,5 +1,3 @@
-// models/Quiz.js
-
 const mongoose = require("mongoose");
 const Question = require("./Question"); // Import the Question model
 
