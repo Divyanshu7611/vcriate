@@ -8,7 +8,6 @@ const questionRoute = require("./routes/questionRoute");
 const quizRoute = require("./routes/quizRoute");
 const resultRoute = require("./routes/resultRoute");
 const cookieParser = require("cookie-parser");
-
 dotenv.config();
 
 const PORT = process.env.PORT || 4000;
@@ -39,3 +38,5 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`App is running at ${PORT}`);
 });
+
+module.exports = app;

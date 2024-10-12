@@ -2,7 +2,9 @@ const express = require("express");
 const router = express.Router();
 const quizController = require("../controllers/quizController");
 const { auth } = require("../middleware/auth");
+const apiLimiter = require("../middleware/rateLimiter");
 
+router.use(apiLimiter);
 router.post("/", auth, quizController.createQuiz);
 
 // get all quizzes
